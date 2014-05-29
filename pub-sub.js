@@ -68,7 +68,7 @@ var x = PubSub.subscribe('first', function() {
     console.log('first eh....')
 })
 
-var x = PubSub.subscribe('first', function() {
+var y = PubSub.subscribe('first', function() {
     console.log('first eh....again')
 })
 
