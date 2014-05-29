@@ -1,3 +1,5 @@
+// This is a program which implements pub sub paradigm
+
 var PubSub = {};
 
 (function(m) {
