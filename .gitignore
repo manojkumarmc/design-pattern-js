@@ -10,6 +10,7 @@ target/
 target/?
 .git
 .git/?
+.js~*
 
 
 
