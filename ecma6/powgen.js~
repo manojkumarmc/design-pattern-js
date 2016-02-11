@@ -1,0 +1,13 @@
+"use strict";
+
+function* powGenerator() {
+    let result = Math.pow(yield "a", yield "b")
+    return result
+}
+
+var g = powGenerator();
+
+console.log(g.next().value);
+console.log(g.next().value);
+console.log(g.next().value);
+
