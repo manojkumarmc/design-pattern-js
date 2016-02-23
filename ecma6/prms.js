@@ -14,6 +14,7 @@ console.log(c.age)
 
 fs.readFile('cst.js',{encoding: 'utf-8'},(error, text) => {
   console.log(text)
+  console.log('==================================')
 })
 
 function httpGet(url) {
@@ -40,3 +41,13 @@ httpGet('http://www.google.com')
 (value) => {
   console.log('Error :' + value)
 })
+
+var p = new Promise((resolve, reject) => {setTimeout(() => resolve(4), 2000)})
+
+p.then((res) => {
+  res += 2
+  console.log(res)
+})
+
+p.then((res) => console.log(res))
+
